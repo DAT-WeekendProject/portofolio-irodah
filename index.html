@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irodah Al-Malik | Business Analyst & Project Manager Portfolio</title>
+  <meta name="description" content="Portfolio of Irodah Al-Malik, an experienced Business Analyst, Data Analyst, and Project Manager specializing in strategy, data, and Agile execution.">
+  <meta name="keywords" content="Business Analyst, Data Analyst, Project Manager, Agile, Jira, Power BI, SQL, Portfolio, Irodah Al-Malik">
+  <meta name="author" content="Irodah Al-Malik">
+  
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'charcoal': '#151111',
+            'deep-teal': '#133039',
+            'muted-teal': '#4D6A73',
+            'warm-linen': '#F6F0EC',
+            'off-white': '#F8F8F8',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-out forwards',
+            'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(30px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #151111 30%, #4D6A73 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#F8F8F8] text-[#151111] antialiased selection:bg-[#4D6A73] selection:text-white">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-[#151111] z-50 transition-all duration-100" style="width: 0%"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-6 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#home" id="logo-text" class="text-xl md:text-2xl font-extrabold text-[#151111] tracking-tight flex items-center gap-2 transition-colors duration-300">
+        <span class="w-3 h-3 rounded-full bg-[#4D6A73] animate-pulse"></span>
+        Irodah Al-Malik
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link text-sm font-semibold text-[#151111]/80 hover:text-[#151111] transition-colors duration-200 py-2">Home</a>
+        <a href="#skills" class="nav-link text-sm font-semibold text-[#151111]/80 hover:text-[#151111] transition-colors duration-200 py-2">Skills</a>
+        <a href="#case-studies" class="nav-link text-sm font-semibold text-[#151111]/80 hover:text-[#151111] transition-colors duration-200 py-2">Case Studies</a>
+        <a href="#contact" class="nav-link text-sm font-semibold text-[#151111]/80 hover:text-[#151111] transition-colors duration-200 py-2">Contact</a>
+        <a href="#contact" id="nav-cta" class="bg-[#151111] hover:bg-[#4D6A73] text-[#F8F8F8] hover:text-[#151111] px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md transition-all duration-200 hover:-translate-y-0.5">Let's Connect</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-[#151111] hover:text-[#4D6A73] focus:outline-none transition-colors duration-200" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-[#133039] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-between">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-8">
+          <span class="text-xl font-bold text-[#F8F8F8] flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#4D6A73]"></span>
+            Navigation
+          </span>
+          <button id="mobile-menu-close" class="text-[#F8F8F8]/80 hover:text-[#4D6A73] transition-colors">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-6">
+          <a href="#home" class="mobile-nav-link text-lg font-medium text-[#F8F8F8]/80 hover:text-white transition-colors py-2 border-b border-white/5">Home</a>
+          <a href="#skills" class="mobile-nav-link text-lg font-medium text-[#F8F8F8]/80 hover:text-white transition-colors py-2 border-b border-white/5">Skills</a>
+          <a href="#case-studies" class="mobile-nav-link text-lg font-medium text-[#F8F8F8]/80 hover:text-white transition-colors py-2 border-b border-white/5">Case Studies</a>
+          <a href="#contact" class="mobile-nav-link text-lg font-medium text-[#F8F8F8]/80 hover:text-white transition-colors py-2 border-b border-white/5">Contact</a>
+        </nav>
+      </div>
+      <div class="p-6 border-t border-white/5 bg-[#133039] space-y-4">
+        <a href="mailto:irodahmalik.career@gmail.com" class="flex items-center gap-3 text-sm text-[#F8F8F8]/80 hover:text-[#4D6A73] transition-colors">
+          <i class="fa-regular fa-envelope text-[#4D6A73] text-base"></i>
+          irodahmalik.career@gmail.com
+        </a>
+        <div class="flex items-center gap-4 text-[#F8F8F8]/80 pt-2">
+          <a href="https://www.linkedin.com/in/irodahalmalik" target="_blank" class="hover:text-[#4D6A73] text-lg transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/irodahmalik" target="_blank" class="hover:text-[#4D6A73] text-lg transition-colors"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Drawer Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300"></div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-[#F8F8F8]">
+    <!-- Subtle tech patterns -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#4D6A73_1px,transparent_1px),linear-gradient(to_bottom,#4D6A73_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-[0.12]"></div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 animate-slide-up">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#4D6A73]/20 border border-[#4D6A73]/40 text-[#151111] text-xs font-semibold tracking-wide uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#151111]"></span>
+            Available for Opportunities
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#151111] leading-tight tracking-tight">
+            Bridging Strategy, Data, and <span class="text-[#F8F8F8] bg-[#151111] px-3 py-1 rounded-md inline-block my-1 md:my-0">Agile Execution.</span>
+          </h1>
+          <p class="text-lg sm:text-xl font-bold text-[#151111]/90 tracking-wide uppercase">
+            Business Analyst | Data Analyst | Project Manager
+          </p>
+          <p class="text-[#151111]/90 text-base sm:text-lg leading-relaxed max-w-2xl">
+            A results-driven Business graduate with a unique expertise bridging business strategy, data analytics, and agile project execution. Experienced in processing large-scale operational datasets, discovering high-impact cost-saving opportunities, and facilitating cross-functional stakeholder collaboration. Passionate about transforming business complexities into scalable, data-driven solutions.
+          </p>
+          
+          <!-- Call To Action Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#contact" class="flex items-center gap-2 bg-[#151111] hover:bg-[#4D6A73] text-[#F8F8F8] hover:text-[#151111] px-7 py-3.5 rounded-xl font-semibold shadow-lg transition-all duration-200 hover:-translate-y-0.5">
+              <i class="fa-regular fa-envelope"></i>
+              Contact Me
+            </a>
+            <a href="https://www.linkedin.com/in/irodahalmalik" target="_blank" class="flex items-center gap-2 bg-transparent hover:bg-[#151111] text-[#151111] hover:text-[#F8F8F8] px-7 py-3.5 rounded-xl font-semibold border border-[#151111] transition-all duration-200 hover:-translate-y-0.5">
+              <i class="fa-brands fa-linkedin text-lg"></i>
+              LinkedIn Profile
+            </a>
+          </div>
+
+          <!-- Statistics Counters -->
+          <div class="grid grid-cols-3 gap-6 pt-10 border-t border-[#4D6A73]/40">
+            <div class="space-y-1">
+              <p class="text-3xl sm:text-4xl font-extrabold text-[#151111] tracking-tight">IDR 6.5B</p>
+              <p class="text-xs font-semibold text-[#151111]/70 uppercase tracking-widest leading-snug">Cost Savings</p>
+            </div>
+            <div class="space-y-1">
+              <p class="text-3xl sm:text-4xl font-extrabold text-[#151111] tracking-tight">13,000+</p>
+              <p class="text-xs font-semibold text-[#151111]/70 uppercase tracking-widest leading-snug">Records Validated</p>
+            </div>
+            <div class="space-y-1">
+              <p class="text-3xl sm:text-4xl font-extrabold text-[#151111] tracking-tight">7</p>
+              <p class="text-xs font-semibold text-[#151111]/70 uppercase tracking-widest leading-snug">Case Studies</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="lg:col-span-5 flex justify-center relative">
+          <!-- Animated gradient blob behind profile -->
+          <div class="absolute -inset-4 bg-gradient-to-tr from-[#4D6A73]/20 to-[#151111]/20 rounded-full blur-3xl opacity-60 animate-pulse-slow"></div>
+          
+          <div class="relative">
+            <!-- Decorative elements -->
+            <div class="absolute -top-6 -left-6 w-12 h-12 rounded-lg bg-[#F6F0EC] border-2 border-[#4D6A73]/30 flex items-center justify-center shadow-md animate-bounce z-20" style="animation-duration: 4s;">
+              <i class="fa-solid fa-chart-pie text-[#151111] text-lg"></i>
+            </div>
+            <div class="absolute -bottom-6 -right-6 w-14 h-14 rounded-full bg-[#F6F0EC] border-2 border-[#4D6A73]/30 flex items-center justify-center shadow-lg animate-bounce z-20" style="animation-duration: 5s;">
+              <i class="fa-solid fa-code-branch text-[#151111] text-xl"></i>
+            </div>
+
+            <!-- Profile Frame -->
+            <div class="relative w-72 h-72 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-4 border-[#4D6A73] shadow-xl flex items-center justify-center">
+              <img src="./images/profile.jpg" alt="Irodah Al-Malik" class="w-full h-full object-cover object-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS LOGO CLOUD -->
+  <section id="skills" class="py-20 bg-[#F8F8F8] border-y border-[#4D6A73]/30">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold text-[#151111] tracking-widest uppercase">Professional Stack</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-[#151111] tracking-tight">Technical Skills & Tooling</p>
+        <div class="w-12 h-1 bg-[#151111] mx-auto rounded-full mt-4"></div>
+        <p class="text-[#151111]/80 text-base sm:text-lg">
+          A balanced toolset spanning data analytics, enterprise documentation, collaborative diagramming, and agile execution methodologies.
+        </p>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- MySQL -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Expert</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">MySQL</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Database querying, optimizing SQL scripts, executing join operations, and processing complex datasets for validation.
+          </p>
+        </div>
+
+        <!-- Power BI -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Advanced</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Power BI</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Designing relational data models, writing DAX expressions, and crafting interactive dashboards to track customer MRR and key revenue streams.
+          </p>
+        </div>
+
+        <!-- Advanced Excel -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Expert</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Advanced Excel</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Formulating data validation systems, using Power Query, array lookups, and pivot tables to reconcile multi-source operational datasets.
+          </p>
+        </div>
+
+        <!-- Google Analytics -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Advanced</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Google Analytics (GA4)</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Tracking user events, acquisition source modeling, analyzing behavioral funnels, and optimizing user conversion paths.
+          </p>
+        </div>
+
+        <!-- Jira -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-trello"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Advanced</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Jira</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Agile backlog execution, managing active sprints, organizing sub-tasks, writing story maps, and running Scrum workflows.
+          </p>
+        </div>
+
+        <!-- Confluence -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Expert</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Confluence</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Writing Business Requirement Documents (BRD), Functional Specifications, stakeholder wiki spaces, and mapping project knowledge.
+          </p>
+        </div>
+
+        <!-- ClickUp -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Advanced</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">ClickUp</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Constructing dynamic Gantt charts, managing milestone timelines, linking subtask dependencies, and organizing product releases.
+          </p>
+        </div>
+
+        <!-- Draw.io -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Expert</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Draw.io</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Mapping business processes with swimlane flowcharts, modeling UML diagrams, and visualizing operational user journeys.
+          </p>
+        </div>
+
+        <!-- Google AI Studio -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Intermediate</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Google AI Studio</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Leveraging AI model prompting, prototyping context-aware automation tasks, and streamlining data-enrichment operations.
+          </p>
+        </div>
+
+        <!-- Miro -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Advanced</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Miro</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Collaborative mind mapping, user journey design, service blueprints, and cross-functional brainstorming workshops.
+          </p>
+        </div>
+
+        <!-- Trello -->
+        <div class="group bg-[#F6F0EC] p-6 sm:p-8 rounded-2xl border-2 border-[#4D6A73]/30 hover:border-[#151111] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#151111]/10 text-[#151111] flex items-center justify-center text-xl font-bold group-hover:bg-[#151111] group-hover:text-[#F8F8F8] transition-colors duration-300">
+              <i class="fa-solid fa-square-poll-horizontal"></i>
+            </div>
+            <span class="text-xs font-semibold text-[#151111] bg-[#4D6A73]/30 px-2.5 py-1 rounded-full">Advanced</span>
+          </div>
+          <h3 class="text-lg font-bold text-[#151111] mb-2">Trello</h3>
+          <p class="text-sm text-[#151111]/80 leading-relaxed">
+            Lightweight Kanban board management, visual task tracking, subtask organization, and status updates for collaborative workflows.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="py-20 bg-[#F8F8F8] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold text-[#151111] tracking-widest uppercase">Project Showcase</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-[#151111] tracking-tight">Case Studies & Projects</p>
+        <div class="w-12 h-1 bg-[#151111] mx-auto rounded-full mt-4"></div>
+        <p class="text-[#151111]/80 text-base sm:text-lg">
+          Discover a selection of project records illustrating strategic requirements discovery, business intelligence, and agile execution.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-6">
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border bg-[#151111] text-[#F8F8F8] border-[#151111] shadow-md" data-category="all">All Projects</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border border-[#4D6A73] bg-transparent text-[#151111] hover:bg-[#4D6A73]/20" data-category="ba">Business Analysis & Doc</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border border-[#4D6A73] bg-transparent text-[#151111] hover:bg-[#4D6A73]/20" data-category="pm">Agile & Project Mgmt</button>
+          <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border border-[#4D6A73] bg-transparent text-[#151111] hover:bg-[#4D6A73]/20" data-category="data">Data & Analytics</button>
+        </div>
+      </div>
+
+      <!-- Case Studies List (Alternating) -->
+      <div class="space-y-24 md:space-y-32">
+
+        <!-- Project 1: Business Performance Optimization (Alfalah Umroh Travel) -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="ba">
+          <!-- Image Column (Left) -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md cursor-zoom-in aspect-[16/10] max-w-lg mx-auto">
+              <img src="./images/alfalah.png" alt="Alfalah Umroh Travel Business Performance Optimization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl"></i>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click image to view full screen</p>
+          </div>
+          <!-- Text Column (Right) -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Business Performance Optimization</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">Alfalah Umroh Travel</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              Led the requirements elicitation process to optimize the service workflow for Alfalah Umroh Travel. Conducted deep root-cause bottleneck analysis using the <strong>5-Whys methodology</strong> to trace operational gaps, resulting in streamlined client onboarding.
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-sitemap text-[#151111]"></i> Service Workflow Optimization
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Conducted interviews with key stakeholders to map out the booking and travel execution workflow. Identified critical delays in traveler document processing and formulated actionable operational guidelines.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Business Analysis</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">5-Whys Analysis</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Process Optimization</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Requirements Discovery</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Product Management & Agile Execution (TrackDividend) -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="ba">
+          <!-- Image Column (Right - Alternating Desktop) -->
+          <div class="lg:col-span-6 lg:order-2 space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[4/3] cursor-zoom-in">
+                <img src="./images/brd.png" alt="Business Requirement Document specification draft" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-xl"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[4/3] cursor-zoom-in">
+                <img src="./images/confluence.png" alt="Confluence central product wiki space" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-xl"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[4/3] cursor-zoom-in">
+                <img src="./images/jira.png" alt="Jira active sprint backlog execution board" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-xl"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[4/3] cursor-zoom-in">
+                <img src="./images/draw io.png" alt="Draw.io process mapping / flowchart user journey" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-xl"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click images to view full screen</p>
+          </div>
+          <!-- Text Column (Left - Alternating Desktop) -->
+          <div class="lg:col-span-6 lg:order-1 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Product Management & Agile Execution</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">TrackDividend Platform</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              Spearheaded the formulation and structuring of enterprise-grade **Business Requirement Documents (BRD)** and **Functional Specification Documents (FSD)** using Confluence. Maintained a bridge to agile software execution by converting specifications into user stories and sprint backlogs in Jira.
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-file-invoice text-[#151111]"></i> End-to-End Agile Specifications
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Utilized Confluence to define edge-case behaviors and user journeys mapped in Draw.io. Organized sprint cycles, backlog refinements, standups, and tracked team metrics in Jira to ensure seamless development progress.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Confluence</span>
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Jira</span>
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Draw.io</span>
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">BRD & Agile</span>
+              </div>
+              <a href="https://trackdividend.vercel.app/" target="_blank" class="text-sm font-bold text-[#151111] hover:text-[#4D6A73] flex items-center gap-1.5 transition-colors group">
+                Visit Project 
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Data Validation & Financial Impact (Validasi ISR Telkom) -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="data">
+          <!-- Image Column (Left) -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md cursor-zoom-in aspect-[16/10] max-w-lg mx-auto">
+              <img src="./images/exel.png" alt="Advanced Excel validation workbook with formula reconciliations" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl"></i>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click image to view full screen</p>
+          </div>
+          <!-- Text Column (Right) -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Data Validation & Financial Audit</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">Validasi ISR Telkom</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              Processed, cleaned, and reconciled <strong>13,000+ detailed operational records</strong> using advanced Excel data models. Addressed critical discrepancy gaps across separate billing structures to identify operational inefficiencies.
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-wallet text-[#151111]"></i> IDR 6.5 Billion Validated Savings
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Utilized complex Excel formulas, array lookups, and pivot data models to trace and audit transactional anomalies. Successfully discovered cost-leaks, leading directly to a verified savings impact of <strong>IDR 6.5 Billion</strong>.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Advanced Excel</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Data Reconciliation</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Financial Auditing</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Operational Savings</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Retail Market Analytics -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="data">
+          <!-- Image Column (Right - Alternating Desktop) -->
+          <div class="lg:col-span-6 lg:order-2 space-y-4">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[3/4] cursor-zoom-in">
+                <img src="./images/mysql.png" alt="MySQL Database Queries" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-lg"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[3/4] cursor-zoom-in">
+                <img src="./images/powerbi-tabel.png" alt="Power BI Data Tables" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-lg"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-sm aspect-[3/4] cursor-zoom-in">
+                <img src="./images/powerbi-relation.png" alt="Power BI Data Relationships" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-lg"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click images to view full screen</p>
+          </div>
+          <!-- Text Column (Left - Alternating Desktop) -->
+          <div class="lg:col-span-6 lg:order-1 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Business Intelligence & Database Analytics</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">Retail Market Analytics</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              Analyzed retail market datasets to extract business insights and visualized sales performance and data relationships using MySQL and Power BI.
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-chart-line text-[#151111]"></i> SQL Relations & Visualizations
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Cleaned multi-source transactional datasets using MySQL syntax and mapped structured schemas. Transformed these relations into high-impact Power BI models displaying sales velocity and performance indicators.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">MySQL</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Power BI</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Data Modeling</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Analytics Insights</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: SDWAN Dashboard -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="data">
+          <!-- Image Column (Left) -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md cursor-zoom-in aspect-[16/10] max-w-lg mx-auto">
+              <img src="./images/dashboard-sdwan.png" alt="SDWAN Dashboard Interface" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl"></i>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click image to view full screen</p>
+          </div>
+          <!-- Text Column (Right) -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Business Intelligence & Reporting</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">SDWAN Dashboard</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              Translated complex billing and reconciliation data into an interactive dashboard, tracking revenue share and customer growth for executive decision-making.
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-server text-[#151111]"></i> Partner Revenue Sharing Dashboards
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Consolidated cross-entity billing records to track monthly recurring revenues (MRR), contract progress, and partner share ratios, providing clear operational summaries for executives.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">SDWAN Analytics</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Dashboard Design</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Revenue Share</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Executive Reporting</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Cross-Functional Event Management (Plugged-In Innovation Bapenda) -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="pm">
+          <!-- Image Column (Right - Alternating Desktop) -->
+          <div class="lg:col-span-6 lg:order-2 space-y-4">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md aspect-[3/4] cursor-zoom-in">
+                <img src="./images/bapenda.png" alt="Bapenda stakeholder milestone timeline" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-lg"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md aspect-[3/4] cursor-zoom-in">
+                <img src="./images/bapenda2.png" alt="Bapenda timeline progress list" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-lg"></i>
+                </div>
+              </div>
+              <div class="group relative overflow-hidden rounded-xl border border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md aspect-[3/4] cursor-zoom-in">
+                <img src="./images/bapenda3.png" alt="Bapenda ClickUp Gantt task dependencies layout" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-magnifying-glass-plus text-white text-lg"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click images to view full screen</p>
+          </div>
+          <!-- Text Column (Left - Alternating Desktop) -->
+          <div class="lg:col-span-6 lg:order-1 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Cross-Functional Project Management</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">Plugged-In Innovation Bapenda</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              Coordinated and managed the end-to-end execution of a strategic tax revenue **Focus Group Discussion (FGD)** bringing together key government delegates and technology executives.
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-calendar-check text-[#151111]"></i> ClickUp Gantt Timelines & Tasks
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Mapped out the operational timeline and inter-team task dependencies using ClickUp Gantt charts. Managed multi-track progress paths (logistics, stakeholder invitations, speakers, content delivery), preventing milestone slippage.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">ClickUp</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Gantt Charts</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Stakeholder Management</span>
+              <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Operations</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7: WayGo Travel Application -->
+        <article class="case-study-card grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center" data-category="data">
+          <!-- Image Column (Left) -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-[#4D6A73]/30 bg-[#F6F0EC] shadow-md cursor-zoom-in aspect-[16/10] max-w-lg mx-auto">
+              <img src="./images/waygo.png" alt="WayGo Travel Application" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-[#133039]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-white text-2xl"></i>
+              </div>
+            </div>
+            <p class="text-xs text-center text-[#151111]/60 font-medium"><i class="fa-solid fa-info-circle mr-1"></i> Click image to view full screen</p>
+          </div>
+          <!-- Text Column (Right) -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Web Analytics & User Behavior</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#151111] tracking-tight">WayGo Travel Application</h3>
+            <p class="text-[#151111]/80 leading-relaxed">
+              An itinerary web application where I tracked user acquisition and behavioral metrics using Google Analytics 4 (GA4).
+            </p>
+            <div class="bg-[#F6F0EC] p-5 rounded-2xl border border-[#4D6A73]/30 space-y-3 shadow-sm">
+              <h4 class="text-sm font-bold text-[#151111] flex items-center gap-2">
+                <i class="fa-solid fa-funnel-dollar text-[#151111]"></i> Conversion Analysis
+              </h4>
+              <p class="text-xs text-[#151111]/70 leading-relaxed">
+                Mapped user flow checkpoints from organic landing pages to transaction completions. Highlighted drop-off stages in traveler checkout, providing structural suggestions to improve conversion ratios.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Google Analytics 4</span>
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Event Tracking</span>
+                <span class="px-3 py-1 rounded-md bg-[#4D6A73]/20 text-[#133039] text-xs font-semibold border border-[#4D6A73]/40">Funnel Analysis</span>
+              </div>
+              <a href="https://way-go-wc75.vercel.app/" target="_blank" class="text-sm font-bold text-[#151111] hover:text-[#4D6A73] flex items-center gap-1.5 transition-colors group">
+                Visit Project 
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER SECTION -->
+  <section id="contact" class="py-20 bg-[#133039] text-[#F8F8F8] relative overflow-hidden">
+    <!-- Background visual -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(77,106,115,0.08),transparent_50%)]"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <!-- Contact Intro -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block text-xs font-bold text-[#4D6A73] tracking-widest uppercase">Get In Touch</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Let's build data-driven solutions together.</h2>
+          <p class="text-[#F8F8F8]/70 text-base leading-relaxed">
+            I am always open to discussing new business opportunities, strategic data analysis workflows, software execution planning, or agile management roles.
+          </p>
+
+          <div class="space-y-4 pt-4">
+            <a href="mailto:irodahmalik.career@gmail.com" class="flex items-center gap-4 group p-3 rounded-xl border border-white/5 hover:bg-white/5 transition-all">
+              <span class="w-10 h-10 rounded-lg bg-[#4D6A73]/10 text-[#4D6A73] flex items-center justify-center text-lg"><i class="fa-regular fa-envelope"></i></span>
+              <div>
+                <p class="text-xs font-medium text-[#F8F8F8]/50 uppercase tracking-wider">Email Address</p>
+                <p class="text-sm font-semibold text-white group-hover:text-[#4D6A73] transition-colors">irodahmalik.career@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/irodahalmalik" target="_blank" class="flex items-center gap-4 group p-3 rounded-xl border border-white/5 hover:bg-white/5 transition-all">
+              <span class="w-10 h-10 rounded-lg bg-[#4D6A73]/10 text-[#4D6A73] flex items-center justify-center text-lg"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div>
+                <p class="text-xs font-medium text-[#F8F8F8]/50 uppercase tracking-wider">LinkedIn</p>
+                <p class="text-sm font-semibold text-white group-hover:text-[#4D6A73] transition-colors">linkedin.com/in/irodahalmalik</p>
+              </div>
+            </a>
+            <a href="https://github.com/irodahmalik" target="_blank" class="flex items-center gap-4 group p-3 rounded-xl border border-white/5 hover:bg-white/5 transition-all">
+              <span class="w-10 h-10 rounded-lg bg-[#4D6A73]/10 text-[#4D6A73] flex items-center justify-center text-lg"><i class="fa-brands fa-github"></i></span>
+              <div>
+                <p class="text-xs font-medium text-[#F8F8F8]/50 uppercase tracking-wider">GitHub</p>
+                <p class="text-sm font-semibold text-white group-hover:text-[#4D6A73] transition-colors">github.com/irodahmalik</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="lg:col-span-7">
+          <div class="bg-white/5 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl">
+            <h3 class="text-lg font-bold text-white mb-6">Send an Inquiry</h3>
+            <form id="contact-form" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                  <label for="form-name" class="text-xs font-semibold text-[#F8F8F8]/70">Full Name</label>
+                  <input type="text" id="form-name" required class="w-full bg-white/5 focus:bg-white/10 border border-white/10 focus:border-[#4D6A73] rounded-lg px-4 py-3 text-sm text-white focus:outline-none transition-all placeholder:text-white/20" placeholder="John Doe">
+                </div>
+                <div class="space-y-1">
+                  <label for="form-email" class="text-xs font-semibold text-[#F8F8F8]/70">Email Address</label>
+                  <input type="email" id="form-email" required class="w-full bg-white/5 focus:bg-white/10 border border-white/10 focus:border-[#4D6A73] rounded-lg px-4 py-3 text-sm text-white focus:outline-none transition-all placeholder:text-white/20" placeholder="john@example.com">
+                </div>
+              </div>
+              <div class="space-y-1">
+                <label for="form-subject" class="text-xs font-semibold text-[#F8F8F8]/70">Subject</label>
+                <input type="text" id="form-subject" required class="w-full bg-white/5 focus:bg-white/10 border border-white/10 focus:border-[#4D6A73] rounded-lg px-4 py-3 text-sm text-white focus:outline-none transition-all placeholder:text-white/20" placeholder="Collaboration / Hire">
+              </div>
+              <div class="space-y-1">
+                <label for="form-message" class="text-xs font-semibold text-[#F8F8F8]/70">Message Details</label>
+                <textarea id="form-message" rows="4" required class="w-full bg-white/5 focus:bg-white/10 border border-white/10 focus:border-[#4D6A73] rounded-lg px-4 py-3 text-sm text-white focus:outline-none transition-all placeholder:text-white/20" placeholder="Project context, requirements..."></textarea>
+              </div>
+              <button type="submit" class="w-full bg-[#4D6A73] hover:bg-[#4D6A73]/80 text-[#133039] font-bold text-sm py-3.5 rounded-xl shadow-lg transition-all duration-200 hover:-translate-y-0.5">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Branding & Links -->
+      <div class="mt-20 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#F8F8F8]/50">
+        <p>&copy; 2026 Irodah Al-Malik. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#home" class="hover:text-white transition-colors">Back to Top</a>
+          <a href="#skills" class="hover:text-white transition-colors">Core Skills</a>
+          <a href="#case-studies" class="hover:text-white transition-colors">Case Studies</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX / EXPANSION MODAL -->
+  <div id="lightbox" class="fixed inset-0 bg-[#133039]/95 backdrop-blur-md z-50 flex flex-col items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-opacity duration-300">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-[#F8F8F8]/60 hover:text-white transition-colors duration-200 text-3xl focus:outline-none" aria-label="Close zoomed view">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="relative max-w-5xl max-h-[75vh] w-full flex items-center justify-center">
+      <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl border border-white/10">
+    </div>
+    <p id="lightbox-caption" class="text-sm font-semibold text-[#F8F8F8] mt-4 text-center px-4 max-w-xl"></p>
+  </div>
+
+  <!-- CONTACT FORM SUCCESS MODAL -->
+  <div id="success-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-[#F6F0EC] p-8 rounded-3xl max-w-sm w-full text-center shadow-2xl border border-[#4D6A73] transform scale-95 transition-transform duration-300">
+      <div class="w-16 h-16 rounded-full bg-[#151111]/10 text-[#151111] flex items-center justify-center text-2xl mx-auto mb-4 border border-[#4D6A73]/40 animate-bounce">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="text-xl font-bold text-[#151111] mb-2">Message Received!</h3>
+      <p class="text-sm text-[#151111]/80 mb-6">
+        Thank you for reaching out. Irodah will review your inquiry and get back to you shortly.
+      </p>
+      <button id="success-modal-close" class="w-full bg-[#151111] hover:bg-[#4D6A73] text-[#F8F8F8] hover:text-[#151111] font-semibold text-sm py-3 rounded-xl transition-all">
+        Close Window
+      </button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 1. SCROLL PROGRESS INDICATOR
+    window.addEventListener('scroll', () => {
+      const scrollProgress = document.getElementById('scroll-progress');
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (totalHeight > 0) {
+        const scrolled = (window.scrollY / totalHeight) * 100;
+        scrollProgress.style.width = scrolled + '%';
+      }
+    });
+
+    // 2. STICKY NAVBAR TRANSITION
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      const logoText = document.getElementById('logo-text');
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const navCta = document.getElementById('nav-cta');
+      
+      if (window.scrollY > 30) {
+        navbar.classList.add('bg-[#133039]', 'shadow-md', 'py-4', 'border-b', 'border-[#4D6A73]/30');
+        navbar.classList.remove('bg-transparent', 'py-6');
+        logoText.classList.add('text-[#F8F8F8]');
+        logoText.classList.remove('text-[#151111]');
+        menuBtn.classList.add('text-[#F8F8F8]');
+        menuBtn.classList.remove('text-[#151111]');
+        navLinks.forEach(link => {
+          link.classList.add('text-[#F8F8F8]/80', 'hover:text-[#F8F8F8]');
+          link.classList.remove('text-[#151111]/80', 'hover:text-[#151111]');
+        });
+        navCta.classList.add('bg-[#4D6A73]', 'text-[#133039]', 'hover:bg-[#F8F8F8]');
+        navCta.classList.remove('bg-[#151111]', 'text-[#F8F8F8]', 'hover:bg-[#4D6A73]', 'hover:text-[#151111]');
+      } else {
+        navbar.classList.add('bg-transparent', 'py-6');
+        navbar.classList.remove('bg-[#133039]', 'shadow-md', 'py-4', 'border-b', 'border-[#4D6A73]/30');
+        logoText.classList.add('text-[#151111]');
+        logoText.classList.remove('text-[#F8F8F8]');
+        menuBtn.classList.add('text-[#151111]');
+        menuBtn.classList.remove('text-[#F8F8F8]');
+        navLinks.forEach(link => {
+          link.classList.add('text-[#151111]/80', 'hover:text-[#151111]');
+          link.classList.remove('text-[#F8F8F8]/80', 'hover:text-[#F8F8F8]');
+        });
+        navCta.classList.add('bg-[#151111]', 'text-[#F8F8F8]', 'hover:bg-[#4D6A73]', 'hover:text-[#151111]');
+        navCta.classList.remove('bg-[#4D6A73]', 'text-[#133039]', 'hover:bg-[#F8F8F8]');
+      }
+    });
+
+    // 3. MOBILE MENU DRAWER
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const menuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function openMobileMenu() {
+      mobileMenu.classList.remove('translate-x-full');
+      mobileOverlay.classList.remove('hidden');
+      setTimeout(() => mobileOverlay.classList.add('opacity-100'), 50);
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('translate-x-full');
+      mobileOverlay.classList.remove('opacity-100');
+      setTimeout(() => mobileOverlay.classList.add('hidden'), 300);
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    menuBtn.addEventListener('click', openMobileMenu);
+    menuClose.addEventListener('click', closeMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+    // 4. CASE STUDIES FILTERING
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const caseCards = document.querySelectorAll('.case-study-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Toggle active button style using new colors
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-[#151111]', 'text-[#F8F8F8]', 'border-[#151111]', 'shadow-md');
+          b.classList.add('border-[#4D6A73]', 'bg-transparent', 'text-[#151111]', 'hover:bg-[#4D6A73]/20');
+        });
+        btn.classList.add('bg-[#151111]', 'text-[#F8F8F8]', 'border-[#151111]', 'shadow-md');
+        btn.classList.remove('border-[#4D6A73]', 'bg-transparent', 'text-[#151111]', 'hover:bg-[#4D6A73]/20');
+
+        const activeCat = btn.getAttribute('data-category');
+
+        // Apply filters with transition
+        caseCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (activeCat === 'all' || cardCat === activeCat) {
+            card.classList.remove('hidden');
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+              card.classList.add('hidden');
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // 5. LIGHTBOX / SCREENSHOT PREVIEW
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const zoomImages = document.querySelectorAll('.cursor-zoom-in img');
+
+    zoomImages.forEach(img => {
+      img.parentElement.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxCaption.textContent = img.alt;
+        lightbox.classList.remove('pointer-events-none');
+        lightbox.classList.add('opacity-100');
+        document.body.classList.add('overflow-hidden');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.add('pointer-events-none');
+      lightbox.classList.remove('opacity-100');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target === lightboxImg.parentElement || e.target === lightboxImg) {
+        if (e.target !== lightboxImg) {
+          closeLightbox();
+        }
+      }
+    });
+
+    // 6. CONTACT FORM SUBMISSION MOCK
+    const contactForm = document.getElementById('contact-form');
+    const successModal = document.getElementById('success-modal');
+    const successClose = document.getElementById('success-modal-close');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      successModal.classList.remove('pointer-events-none');
+      successModal.classList.add('opacity-100');
+      successModal.firstElementChild.classList.remove('scale-95');
+      successModal.firstElementChild.classList.add('scale-100');
+      document.body.classList.add('overflow-hidden');
+      
+      contactForm.reset();
+    });
+
+    function closeSuccessModal() {
+      successModal.classList.add('pointer-events-none');
+      successModal.classList.remove('opacity-100');
+      successModal.firstElementChild.classList.add('scale-95');
+      successModal.firstElementChild.classList.remove('scale-100');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    successClose.addEventListener('click', closeSuccessModal);
+    successModal.addEventListener('click', (e) => {
+      if (e.target === successModal) {
+        closeSuccessModal();
+      }
+    });
+  </script>
+</body>
+</html>
