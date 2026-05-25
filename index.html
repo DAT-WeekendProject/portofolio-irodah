@@ -975,55 +975,8 @@
       }
     });
 
-    // 6. CONTACT FORM SUBMISSION VIA FORMSUBMIT AJAX
-    const contactForm = document.getElementById('contact-form');
-    const successModal = document.getElementById('success-modal');
-    const successClose = document.getElementById('success-modal-close');
-
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      // Submit form data using fetch to FormSubmit
-      fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          // Show the premium custom success modal
-          successModal.classList.remove('pointer-events-none');
-          successModal.classList.add('opacity-100');
-          successModal.firstElementChild.classList.remove('scale-95');
-          successModal.firstElementChild.classList.add('scale-100');
-          document.body.classList.add('overflow-hidden');
-          
-          contactForm.reset();
-        } else {
-          alert('Oops! There was a problem submitting your form. Please try again.');
-        }
-      })
-      .catch(error => {
-        alert('Oops! There was a problem submitting your form. Please try again.');
-      });
-    });
-
-    function closeSuccessModal() {
-      successModal.classList.add('pointer-events-none');
-      successModal.classList.remove('opacity-100');
-      successModal.firstElementChild.classList.add('scale-95');
-      successModal.firstElementChild.classList.remove('scale-100');
-      document.body.classList.remove('overflow-hidden');
-    }
-
-    successClose.addEventListener('click', closeSuccessModal);
-    successModal.addEventListener('click', (e) => {
-      if (e.target === successModal) {
-        closeSuccessModal();
-      }
-    });
+    // 6. CONTACT FORM SUBMISSION
+    // Allow the form to submit natively to the FormSubmit POST action.
   </script>
 </body>
 </html>
